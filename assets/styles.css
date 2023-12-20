@@ -219,6 +219,7 @@ a {
 .carousel--container {
     padding: max(1.5rem, 1vh) 0;
     backdrop-filter: blur(1.5rem);
+    --webkit-backdrop-filter: blur(1.5rem);
 }
 
 .footer {
@@ -640,6 +641,7 @@ a {
 
     .header:hover {
         backdrop-filter: blur(1.5rem);
+        --webkit-backdrop-filter: blur(1.5rem);
     }
 } 
 
@@ -710,6 +712,7 @@ a {
         padding: 2rem 1rem;
         gap: 1.5rem;
         backdrop-filter: blur(1.5rem);
+        --webkit-backdrop-filter: blur(1.5rem);
         z-index:99;
     }
 
