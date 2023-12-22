@@ -47,9 +47,19 @@
         pageNum = 1,
         pageRendering = false,
         pageNumPending = null,
-        scale = 2,
+        scale = 3,
         canvas = document.getElementById('the-canvas'),
         ctx = canvas.getContext('2d');
+
+    // Function to handle window resize event
+    function handleResize() {
+        scale = 2;
+        renderPage(pageNum);
+    }
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
 
     /**
      * Get page info from document, resize canvas accordingly, and render page.
