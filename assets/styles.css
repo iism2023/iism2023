@@ -602,6 +602,23 @@ a {
     color: #0D0D0D;
 }
 
+.iism-about {
+    padding: 0.25rem max(1rem, 4.5vw);
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: #0D0D0D;
+    line-height: 1.4;
+    text-align: justify;
+    margin-top: 2rem;
+}
+
+.iism-about img {
+    float: right;
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 0 1rem 4rem;
+}
+
 .iism-img img {
     min-width: 100vw;
 }
