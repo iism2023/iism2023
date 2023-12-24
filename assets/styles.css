@@ -772,6 +772,101 @@ a {
     margin: 1rem 0;
 }
 
+.iism-score table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    color: #0D0D0D;
+    margin: 1rem 0;
+  }
+  
+  .iism-score table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  .iism-score table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  .iism-score table th,
+  .iism-score table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  .iism-score table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  .stripe {
+    background-color: #2182BF;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .stripe a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .iism-score table {
+      border: 0;
+    }
+  
+    .iism-score table caption {
+      font-size: 1.3em;
+    }
+    
+    .iism-score table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    .iism-score table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    .iism-score table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    .iism-score table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .iism-score table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
 @media (max-width: 768px) {
     .iism-contact {
         padding: 0.25rem 0;
