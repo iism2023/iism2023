@@ -221,6 +221,29 @@ a {
     background-color: #eee;
 }
 
+.iism-choose {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    color: #2182BF;
+    font-size: 1.5rem;
+    margin: 2rem;
+    font-weight: 300;
+}
+
+.iism-choose .iism-choose-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid #2182BF;
+    border-radius: 7px;
+}
+
+.iism-choose .iism-choose-btn:hover {
+    background-color: #2182BF;
+    color: #fff;
+    cursor: pointer;
+}
+
+
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .carousel--container {
         backdrop-filter: blur(1.5rem);

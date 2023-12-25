@@ -17,6 +17,18 @@ function toggle(x) {
   $(classname).slideToggle('slow'); 
 }
 
+var galley_sections = ["inaug", "day1", "day2"];
+
+function show(e) {
+	for (var i = 0; i < galley_sections.length; i++) {
+		if (galley_sections[i] == e) {
+		document.getElementById(galley_sections[i]).style.display = "block";
+		} else {
+		document.getElementById(galley_sections[i]).style.display = "none";
+		}
+  }
+} 
+
 function closeOpenDropdowns(e) {
 	let openDropdownEls = document.querySelectorAll("details.dropdown[open]");
 
