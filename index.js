@@ -17,7 +17,7 @@ function toggle(x) {
   $(classname).slideToggle('slow'); 
 }
 
-var galley_sections = ["inaug", "day1", "day2", "day3", "day4"];
+var galley_sections = ["inaug", "day1", "day2", "day3", "day4", "day5", "day6", "closing"];
 
 function show(e) {
 	for (var i = 0; i < galley_sections.length; i++) {
